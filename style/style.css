@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: hsl(293, 93%, 12%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    position: relative;
+    transition:background-color 1s;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgb(253, 253, 253);
+    width: 400px;
+    padding: 40px;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 15px solid hsl(293, 93%, 12%);
+    font-weight: 100;
+    padding: 0 0 0 5px;
+    text-transform: capitalize;
+    transition:border-color 1s;
+
+}
+
+form .form-group {
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0;
+    background-color: white;
+    border:2px solid gray;
+    outline: none;
+}
+.form-group input:placeholder-shown{
+    font-weight: 600;
+}
+.form-group .button{
+    width: 100%;
+    padding: 6px 0;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    background-color: hsl(293, 93%, 12%);
+    color: white;
+    transition:background-color 1s;
+}
+.forget{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.forget > a{
+    text-transform: capitalize;
+    color: rgb(56, 55, 55);
+}
+.forget > a:hover{
+    color:black;
+}
+
+.color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    translate: 0% -50%;
+}
+.color > button{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+.color > button.active{
+    border: 2px solid rgb(0, 0, 0);
+    scale: 1.2;
+}
+.color > button:nth-child(1){
+    background-color: hsl(240, 76%, 37%);
+}
+.color > button:nth-child(2){
+    background-color: hsl(140, 75%, 25%);
+
+}
+.color > button:nth-child(3){
+    background-color: hsl(352, 79%, 46%);
+
+}
+.color > button:nth-child(4){
+    background-color: hsl(184, 90%, 35%);
+
+}
+.color > button:nth-child(5){
+    background-color: hsl(325, 77%, 45%);
+
+}
+@media (max-width:700px){
+    .color{
+        background-color: white;
+        position: absolute;
+        padding: 5px;
+        flex-direction: row;
+        left: 50%;
+        top: 96vh;
+        width: 220px;
+        translate: -50% -50%;
+    }
+    
+}
